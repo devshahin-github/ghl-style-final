@@ -1,0 +1,464 @@
+
+:root {
+  --custom-width: 100vw;
+  --design-width: 1440;
+  --ratio: calc(var(--custom-width) / var(--design-width));
+
+  /* --menu-hover-color: #5077eb; */
+  /* --wl-brand-logo: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c6b5da3b8faf7c503685f3.png);
+  --brand-primery-color: #1b2c60ff;
+  --brand-secondary-color: #0075fb; */
+  
+
+  --image-0: url(data:image/png;base64,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);
+  --image-1: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAMCAYAAAADFL+5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7ZRBDYBADAS3BAEnASlIwAE4QAMOwAE4wBFIOAdlN3hoPzdJ2/TVSR9rIO4+ccysgjguMzt7Hl+57Ihn5O1ibA+XATlUCTgS6ZBME2gCEqjI45XAhjwOU2cULPijOAp9XVF8f8mKHirR53B9AAAAAElFTkSuQmCC);
+  --image-2: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAICAYAAAAFiPQnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHdSURBVHgBjVNRbtNAEH12gpBIhYwKUtJUIp8UgrTcwL1BuMFWfPEFN2hyA3qC7i9/6QlIToBRKuhfjSAQaKW6VapGVbzbN45dRWladaTd7M68eW88O/GQW9DQQaUC7TwEnkOSpuiODkxcxBtKB5dTfCzugrE+4r8D08WcrTd1aIHQs4iH340p/NUXulEqoZXxXzse4AscGnP5CYNvf++b3jWmjEPctN5w32wWl7WmbjNvOysM2Czy66/0Lh1azr5sJNsVQd9iiwQeLN4wYWc8RrSo4ICOYDIcBbnC2sa750uKEWwmXn+pdSEoVs5/Q+ew9ytvB9siYhHuMHmO4nzxMD1djLOiLkVb/PJtEXRst+chYUj58lY56AT3MGldvaldZSXDh1w7SWSSRZxzfpsfEhPfli5yBjp0Zzg/niX0yNZiG5Q45f1qTf3hFtEuty0hFJLzMkmXmLVe4hM3qwBGhso6/MxEZUunGUnC29e11/pQBoaBT7UN3bpBBnwbDozJCYNHU87DEpOWyxCxyA7/CZ35WEm28XGUVFbVHoXYdoxYWZ/r/Z8fs8kTe7quYFNU+TZ94g/O/kfx42fqlPigVFf9ySiaCG5lVQUkmRwNzGe5E9cTfjk/qSow/98VIpXK5ilNe9sAAAAASUVORK5CYII=);
+  --image-3: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAQUA+v8AAAAAAAAFAAFkeJU4AAAAAElFTkSuQmCC);
+  --image-4: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVHgBnVSBEYIwDEydoCOwgYzACIzABrIBOAFsABs4gjoBOoE6QbtBTSXVWNuj+He55p7kk7YpAiIwxkhcSrQtUVchxAhrgCI52s38wnJ5qkgWEXFQNiZFaPCSajIu3qcIKZZQMr7gBfy8TUBLMn9ivo7ERIXuzK+Zv2P+BZaAbY+Bw1UeN6QIFWYZBaQg0FV6N9RJRb408YGUFFMZf56Q6CjwyDh/MCeeiP6B+M4RDSUUkU5bMhn45oq1wioj98AHWcMfoDPLrFNTi81KAUm7sagEkRUuVsi2f0I7wzx0Gr4nOn9Vn38t7vnscTe9X6Wkq59MGIrOZKBbfp+bgIX24fOuNFbWsdgnEmrVAIHD2Q8AAAAASUVORK5CYII=);
+  --image-5: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA4SURBVHgBdY3BCQAwCAMzkqN0A7v/EqkU0/rQQEC8E4ESkh5d6JJQ8Qnu7JdiMMFyIMme1Ly8uwPvAUYqAOAycAAAAABJRU5ErkJggg==);
+  --image-6: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA3SURBVHgBZYzBDQAgCAM7kqO4Aey/RNUopKn3Ir0LwIbkgNHbOXgJkfG2jrIikekvK/qlRNPlAmloRivCORidAAAAAElFTkSuQmCC);
+  --image-7: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVHgBjZABDYMwFER/p6ASJgEHQ8IcbBJwwBwsUzALOCAoqARwAA7KXXJNoCmES16a9l//79VMijHewRcE8QeVbXST8YUlABZ/wvEMtdayjjP4WCZ2Vu2ZDjiuswOxCejThqOaEzMnU55v9mCxC6J5AI8TTw0m59zCMbXGVAdPGHfhFYKpW/0ATY2MoRTkrbBJxe/ML3l2LtVWqgKljurAeLQAAAAASUVORK5CYII=);
+  --image-8: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAtSURBVHgBhYnBDQAABAPZwEg2MAL7L1HER3xc0jS5IwBSU9q0wOA3xBv4hjpLJFQp94CC6uAAAAAASUVORK5CYII=);
+  --image-9: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACDSURBVHgBjZCLDYAgDESLcQA2EEdwA93ETYyTOIIrsAluoBvUQzGBip9LLjTp8UohEmJmA69wRW9CwPGpJFiI0IDDfJEMp0qIZVRP4m6DcO0LpZS9aD0/y8Hah3S0QE79QQ3ENozT8ByNtxjb0Y+FDOW+R2gEbcl2IqKTvRxxg2/v2gHPtpizJXJX5wAAAABJRU5ErkJggg==);
+  
+  /* Sidebar Menu Image Start */
+  /* --launch-pad-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6391ca54ffa.png);
+  --dashboard-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6e030a54ff7.png);
+  --conversations-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c20624595fc7d.png);
+  --calendars-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea65f18a54ff8.png);
+  --contacts-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c7165cf2a251dfa.png);
+  --opportunities-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e5f854880efb.png);
+  --payments-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c71653eea251df9.png);
+  --marketing-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4dba8585df747.png);
+  --automations-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e58874880efa.png);
+  --sites-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4dbbc995df746.png);
+  --memberships-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c20d0d495fc7e.png);
+  --media-storage-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c7165c57d251df8.png);
+  --reputation-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e55f65880efc.png);
+  --reporting-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6b158a54ff9.png);
+  --app-marketplace-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c200e1495fc7c.png);
+  --mobile-app-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e573b6880efd.png);
+  --settings-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png); */
+  
+  --image-27: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAASCAYAAABvqT8MAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7ZPBDYAgDEU/hAHcAEfRSRxBnMAVXMlJhA3coNakJ0JVjia85PdA/+NWQ0QdgJkz4JnIWRyPwFnxjWR59IXFKT/meIcyo0hHvtCESXlXhaAJFpU04cdCrOgnIwe0cfxLeb97FyXsEsQln2gFAAAAAElFTkSuQmCC);
+  --image-28: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC5SURBVHgBrVKJDcIwDHRYgI6QEboBbAAjsAGMwCjdBDYAJmg3SJjAnIMqXaNQUsFJl8fPKbHthKCqDbYtuAEbmUcEH865ruiFWAv2uhy95eZiHgwLRTg+TERxudXppDhPeSfyXfirta/yhVKdKaZdwealDtaAoWDv6JwEv3VzRPhg5/xognepw17fY5VjR+chrVbQyjrmTTmyT8hhjfl1bPzk3fqnwXZ5QeA8YLOAtczjCV6N6H4cjS+tJtZWyfwCygAAAABJRU5ErkJggg==);
+  --image-29: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG+SURBVHgBrZS9SgNBEMdnlssh+MHZW6x22ii+gDmIhY8QQTRPYN4gCb6APkESBFOJpYVKktJCSWUjxC0EsUoQBbnEG2cvH0TJXfai/+aGm9kfc7Nzf4QQFS+kk1iAAwFiC5A2iEDq94ig+KGIqOx5UMvsKDXuPI4Dzjji8MunLCcdmCAhMJ92m4VIcPFSStvGKocS4kl5Hrmj3eM/QMfCxeDtH6FaQWPFqnSG4Ep1JWcKTVgLkXCrC1kdYH8ET2Cgxbk1SG2ewd3jETRfzsPK2p6gZWHbkAQDDaBar63bqFIn0eU1RcR9iAG9vt+Fj8/nyHre9aTgRZdxoK33B5goxHW+PJRh+dmZpfjQnqQVlbV5A6gf0zAyE3dMKiypO7zhTrVSmxVw5lbBUErvcSOqYho435sS5EN9UmFcOG9FWXQsKPH02hADvji/FlkrBNQCEzq9knm2vxwYSP/Sne5baN73qbC3rfKBV3QtOOaHAgNFQTVDQ3UQgDOuagtBrik8DNpnBPph9JWqlL4/ndFraNodY/SjMp25vnTy6USPUn/1aA7DDvW6hySxSWHgJyj7OMUTbBD49Y6A0m/gQN+pv8HreNukmAAAAABJRU5ErkJggg==);
+  
+  --image-76: url(/images/Funnel-img.png);
+
+  /* Sidebar Menu Image Ends */
+
+  /* Background Color */
+  /* --ghl-topbar-color: rgb(0, 133, 77);
+  --ghl-sidebar-color: rgb(0, 133, 77);
+  --ghl-widgets-color: rgb(0, 92, 54); 
+
+  --ghl-topbar-icon-color: #ffffff;
+  --ghl-topbar-text-color: #ffffff;
+
+  --menu-text-color: #ffffff;
+
+  --ghl-dashboard-icon-color: #83878f;
+  --ghl-white-label-dashboard-color: #f4f5f8ff;
+  --ghl-widgets-icon-color: #ffffff;
+  --ghl-widgets-text-color: #ffffff; */
+
+  /* Menu Text Dynamic */
+  /* --Launch-Pad-Text:'Launch Pad';
+  --Dashboard-Text:'Dashboard';
+  --Conversations-Text:'Conversations';
+  --Calendar-Text:'Calendars';
+  --Contacts-Text:'Contacts';
+  --Opportunities-Text:'Opportunities';
+  --Payments-Text:'Payments & Contracts';
+  --Marketing-Text:'Social Media & Emails';
+  --Automations-Text:'Automations';
+  --Sites-Text:'Sites & Funnelsn';
+  --Memberships-Text:'Courses';
+  --Media-Storage-Text:'Media Storage';
+  --Reputation-Text:'Online Reviews';
+  --Reporting-Text:'Reports';
+  --App-Marketplace-Text:'App Marketplace';
+  --Mobile-App-Text:'Mobile Appn';
+  --Settings-Text:'Settings'; */
+
+  
+}
+/* ======================================================================== */
+
+/* GHL Topbar Style */
+.GHL-Topbar {
+  background: var(--ghl-topbar-color) !important;
+}
+.top-live-chat,.live-chat-68146-0{
+  color: var(--ghl-topbar-text-color) !important;
+}
+.top-ellipse{
+  background-color: var(--ghl-topbar-text-color) !important;
+}
+.ghl-my-icon.icon-Phone, .ghl-my-icon.icon-Bell, .ghl-my-icon.icon-GearSix {
+  font-size: 16px;
+  color: var(--ghl-topbar-icon-color);
+}
+.Top-bar-icon-wraper{
+  border: 1px solid #ffffff1a !important;
+}
+
+/* ===================================================== */
+/* Sidebar Style */
+/* ---------------------------------------------------- */
+
+
+/* GHL Sidebar Style */
+.GHL-Side-Menu-Wrapper {
+  background: var(--ghl-sidebar-color) !important;
+}
+
+
+.wl-brand-logo {
+  background-image: var(--brand-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  max-width: 210px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  z-index: 1;
+  transform: rotate(0deg);
+  align-items: center;
+  margin: auto;
+}
+
+/* Map BG */
+.GHLMapWraper {
+  background: #ffffff1a;
+}
+
+.Search-wraper-bg{
+  background: #0000001a;
+}
+
+.ctrl-K {
+  background: var(--brand-secondary-color);
+    padding: 0px 5px 3px 5px;
+    max-width: 44px;
+    margin-left: 55px;
+    line-height: 15px;
+    border-radius: 2px;
+}
+
+.sidebar-menu-hover{
+  background: var(--menu-hover-color);
+}
+
+/* Sidebar Icon Style */
+
+.ghl-my-icon.icon-MapPinArea, .ghl-my-icon.icon-flash, .ghl-my-icon.icon-updownArrow {
+  font-size: 20px;
+  color: var(--ghl-widgets-icon-color);
+}
+
+.ghl-my-icon.icon-search {
+  font-size: 16px;
+  color: var(--ghl-widgets-icon-color);
+}
+/* ==================================================== */
+/* Sidebar Icon Src */
+.launch-pad-icon{
+  background-image: var(--launch-pad-icon);
+}
+.dashboard-icon{
+  background-image: var(--dashboard-icon);
+}
+.conversations-icon{
+  background-image: var(--conversations-icon);
+}
+.calendars-icon{
+  background-image: var(--calendars-icon);
+}
+.contacts-icon{
+  background-image: var(--contacts-icon);
+}
+.opportunities-icon{
+  background-image: var(--opportunities-icon);
+}
+.payments-icon{
+  background-image: var(--payments-icon);
+}
+.marketing-icon{
+  background-image: var(--marketing-icon);
+}
+.automations-icon{
+  background-image: var(--automations-icon);
+}
+.sites-icon{
+  background-image: var(--sites-icon);
+}
+.memberships-icon{
+  background-image: var(--memberships-icon);
+}
+.media-storage-icon{
+  background-image: var(--media-storage-icon);
+}
+.reputation-icon{
+  background-image: var(--reputation-icon);
+}
+.reporting-icon{
+  background-image: var(--reporting-icon);
+}
+.app-marketplace-icon{
+  background-image: var(--app-marketplace-icon);
+}
+.mobile-app-icon{
+  background-image: var(--mobile-app-icon);
+}
+.settings-icon{
+  background-image: var(--settings-icon);
+}
+
+
+/* menu icon common style fix */
+.menu-icon-vector-style-co {
+  width: 16px !important;
+  height: 16px !important;
+  top: 1px !important;
+  left: 1px !important;
+}
+
+/* ==================================================== */
+
+/* Bottom Toggle Style */
+.Sidebar-Bottom-toggle{
+  background: var(--sidebar-bottom-toggle);
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  top: 30.36%;
+  left: 93.24%;
+  z-index: 1;
+  transform: rotate(0deg) scaleX(-1);
+  overflow: hidden;
+}
+
+.ghl-my-icon.icon-CaretCircleRight {
+  font-size: 27px;
+  color: var(--ghl-widgets-icon-color);
+  line-height: 1.1em;
+  text-align: center;
+}
+
+
+
+/* ===================================================== */
+/* Dhashboard Style */
+/* ---------------------------------------------------- */
+.GHL-Widgets-Wrapper{
+  background: var(--ghl-white-label-dashboard-color) !important;
+}
+
+.Stage-rectangle {
+  width: 12px !important;
+  min-height: 12px !important;
+  background: var(--ghl-widgets-color) !important;
+}
+
+.funnel-state-box{
+  background: var(--funnel-state-box-color) !important;
+}
+
+.ghl-my-icon.icon-Layout {
+  font-size: 20px;
+  color: var(--ghl-dashboard-icon-color);
+}
+
+.ghl-my-icon.icon-downArrow {
+  font-size: 16px;
+  color: var(--ghl-dashboard-icon-color);
+}
+
+/* Cal Date Filter */
+.ghl-cal-icon.icon-RightArrow{
+  font-size: 14px;
+  color: var(--ghl-dashboard-icon-color);
+}
+
+.ghl-cal-icon.icon-Pen{
+  font-size: 18px;
+  color: var(--ghl-dashboard-icon-color);
+}
+.ghl-cal-icon.icon-menuDott{
+  font-size: 20px;
+  color: var(--ghl-dashboard-icon-color);
+}
+
+.ghl-cal-icon.icon-CalendarDots{
+  font-size: 16px;
+  color: var(--ghl-dashboard-icon-color);
+}
+
+/* Widgets BG Style */
+.GHL-Widgets {
+  background: var(--ghl-widgets-color) !important;
+}
+
+.ghl-widget-text{
+  color: var(--ghl-widgets-text-color) !important;
+}
+
+.ghl-my-icon.icon-SlidersHorizontal {
+  font-size: 16px;
+  color: var(--ghl-widgets-icon-color);
+}
+
+.ghl-dhb-icon.icon-downArrow{
+  font-size: 16px;
+  color: var(--ghl-widgets-icon-color);
+}
+
+/*  */
+
+.Stage-Distribution-state{
+  border: 14px solid var(--counter-states-color);
+}
+
+.Opportunity-Status-state{
+  border: 14px solid var(--counter-states-color);
+}
+
+.Conversion-Rate-States{
+  border: 14px solid var(--counter-states-color);
+}
+
+/* ===================================================== */
+
+/* GHL Preview */
+.GHL-White-label-Previw{
+  background: var(--ghl-white-label-dashboard-color) !important;
+  border-radius: 15px;
+}
+
+/* ******************************** */
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Grid Canvas */
+#gridCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Keep it behind other elements */
+  pointer-events: none; /* Prevent it from blocking interactions */
+}
+
+/* Preview-Screen */
+.Preview-Screen {
+  /* background: white; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5); /* 🔥 Set default scale here */
+  cursor: grab;
+  border-radius: 10px;
+  outline: 3px solid rgb(176 176 176 / 60%);
+  outline-offset: 15px;
+}
+
+/* ******************************** */
+
+/* ============================================================= */
+
+/* Sidebar Menu Text Dynamic */
+
+/* Hide the original text and show the new text */
+/* .ah_launchpad{
+    visibility: hidden;
+    position: absolute;
+} */
+
+.ah-menu-item-wraper{
+  gap: 10px !important;
+}
+
+.ah-menu-item{
+  max-width:100% !important;
+}
+
+.ah-menu-item::after{
+  font-size: 12px !important;
+  line-height: 12px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  color: var(--menu-text-color)!important;
+}
+
+/* Show New Menu Text */
+.ah_launchpad::after { content: var(--Launch-Pad-Text); }
+.ah_dashboard::after { content: var(--Dashboard-Text); }
+.ah_conversations::after { content: var(--Conversations-Text); }
+.ah_calendars::after { content: var(--Calendar-Text); }
+.ah_contacts::after { content: var(--Contacts-Text); }
+.ah_opportunities::after { content: var(--Opportunities-Text); }
+.ah_payments::after { content: var(--Payments-Text); }
+.ah_email-marketing::after { content: var(--Marketing-Text); }
+.ah_automation::after { content: var(--Automations-Text); }
+.ah_sites::after { content: var(--Sites-Text); }
+.ah_memberships::after { content: var(--Memberships-Text); }
+.ah_app-media::after { content: var(--Media-Storage-Text); }
+.ah_reputation::after { content: var(--Reputation-Text); }
+.ah_reporting::after { content: var(--Reporting-Text); }
+.ah_app-marketplace::after { content: var(--App-Marketplace-Text); }
+.ah_location-mobile-app::after { content: var(--Mobile-App-Text); }
+.ah_settings::after { content: var(--Settings-Text); }
+
+
+
+/* TEST CODE */
+.css-refresh {
+  animation: cssRefreshFix 0.1s;
+}
+
+@keyframes cssRefreshFix {
+  0% { opacity: 0.99; }
+  100% { opacity: 1; }
+}
+
+.ah_launchpad::after {
+  content: var(--Launch-Pad-Text);
+  display: inline-block;
+  white-space: nowrap;
+  animation: cssRefreshFix 0.1s;
+}
+
+
+
+/* 
+Launch Pad
+Dashboard
+Conversations
+Calendar
+Contacts
+Opportunities
+Payments
+Marketing
+Automations
+Sites
+Memberships
+Media Storage
+Reputation
+Reporting
+App Marketplace
+Mobile App
+Settings
+
+*/

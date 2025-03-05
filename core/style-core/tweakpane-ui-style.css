@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Mont';
+    src: url('./mont-font/Mont-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./mont-font/Mont-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./mont-font/Mont-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./mont-font/Mont-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./mont-font/Mont-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./mont-font/Mont-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#tweakpane {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    max-width: 330px;
+    z-index: 9999;
+}
+
+.tp-rotv{
+    background-color: #000619 !important;
+    font-family: 'Mont', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+}
+
+.tp-rotv >.tp-rotv_c{
+    max-height: 600px !important;
+    overflow-y: scroll !important;
+    position: relative;
+}
+
+.tp-fldv_t, .tp-rotv_t{
+    font-family: 'Mont', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+.tp-fldv.tp-fldv-expanded .tp-fldv_c {
+    height: auto !important;
+}
+
+/* Custom header inside Tweakpane */
+.tweakpane-header {
+    background: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    border-radius: 6px 6px 0 0;
+}
+.tp-fldv {
+    margin-top: 0px !important;
+    margin-bottom: 15px !important;
+}
+
+/* ✅ Typing Effect: Smooth Loading Animation */
+.typing-effect {
+    animation: typingEffect 0.5s ease-in-out infinite;
+}
+
+@keyframes typingEffect {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+
